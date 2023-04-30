@@ -1,4 +1,4 @@
-# Denovo-transcriptome-reconstruction
+# Denovo-transcriptome
 
 De novo pipeline for the identification of novel L1 containing transcripts in **genome guided** mode. To run this pipeline the user can create a conda environment from this [environment.yml](https://github.com/Hadi90Eidgah/Denovo-transcript-reconstruction/blob/main/environment.yaml).
 Concerning gffread is downloadable from [here](https://github.com/gpertea/gffread).
