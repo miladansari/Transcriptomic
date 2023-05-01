@@ -23,7 +23,7 @@ The **input.csv** must be generated, comma separated, in the following way, havi
 | sample03 | /path/to/S03_R1.fastq |/path/to/S03_R2.fastq|forward / reverse / unstranded|
 | sample ... | ... |(*if single-end, leave this field blank*)|forward / reverse / unstranded|
 
-An example csv file is provided and can be found [here](https://github.com/Hadi90Eidgah/Gene-Expression-Analysis/blob/main/input.csv).
+
 
 ## Which and Where:
 
