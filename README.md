@@ -108,8 +108,8 @@ The Pipeline assumes by default a **Paired-End** library. To work with Single-En
 
 Parameter | Default Value | Alternative Value | function
 --- | --- | --- | --- 
--C | when defined, any other config file will be overwritten | can be a file in the root directory e.g. [nextflow.config](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/nextflow.config) | defines the path of the main nextflow.config file
---input | must be defined  | can be defined inside [main.nf](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/main.nf) (line 51 of the script)| defines the path of the input.csv samplesheet
+-C | when defined, any other config file will be overwritten | can be a file in the root directory e.g. [nextflow.config](https://github.com/miladansari/Transcriptomic/blob/master/nextflow.config) | defines the path of the main nextflow.config file
+--input | must be defined  | can be defined inside [main.nf](https://github.com/miladansari/Transcriptomic/blob/master/main.nf) (line 51 of the script)| defines the path of the input.csv samplesheet
 -w | must be defined | nextflow defines it in root directory of the pipeline | defines the path of the Nextflow work directory
 --outdir | ./results | - | defines the path where results will be saved separately from work directory
 -bg | optional, but recommended | - | parameter to run Nextflow in background, prevents a broken pipeline in case of disconnection
