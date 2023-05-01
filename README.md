@@ -1,6 +1,6 @@
 # Denovo-transcriptome
 
-De novo pipeline for the identification of novel L1 containing transcripts in **genome guided** mode. To run this pipeline the user can create a conda environment from this [environment.yml](https://github.com/Hadi90Eidgah/Denovo-transcript-reconstruction/blob/main/environment.yaml).
+De novo pipeline for the identification of novel L1 containing transcripts in **genome guided** mode. To run this pipeline the user can create a conda environment from this [environment.yml](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/environment.yaml).
 Concerning gffread is downloadable from [here](https://github.com/gpertea/gffread).
 
 The pipeline includes: reads quality control, preprocessing (trimming and removing rRNA) , two-pass alignment that improves novel splice junction quantification, genome-guided transcriptome assembly approach, and finally StringTie takes as input the list of GTF/GFF files and merges/assembles these transcripts into a non-redundant set of transcripts.
