@@ -36,7 +36,7 @@ The **input.csv** must be generated, comma separated, in the following way, havi
 | ./conf | [genom.config](https://github.com/miladansari/Transcriptomic/blob/master/conf/genomes.config) | Configuration file containing the path to annotations and fasta files
 | ./modules | all the modules.nf | Modules to run the pipeline, the workflow is described below |
 |./ | [main.nf](https://github.com/miladansari/Transcriptomic/blob/master/main.nf) | Main nextflow script
-| ./ | [nextflow.config](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/nextflow.config) | Nextflow configuration file containing all the parameters and profile needed to run the pipeline
+| ./ | [nextflow.config](https://github.com/miladansariTranscriptomic/blob/master/nextflow.config) | Nextflow configuration file containing all the parameters and profile needed to run the pipeline
 
 
 
