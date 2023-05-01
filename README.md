@@ -29,7 +29,7 @@ The **input.csv** must be generated, comma separated, in the following way, havi
 
 | Directory    | file  | function  |
 | ------------- |-------------| -----|
-| ./assets      | [human_ribosomal.fa](https://github.com/miladansari/assets/human_ribosomal.fa)| Common ribosomal 31-mers for BBDuk |
+| ./assets      | [human_ribosomal.fa](https://github.com/miladansari/Transcriptomic/assets/human_ribosomal.fa)| Common ribosomal 31-mers for BBDuk |
 | ./assets      | [multiqc_config.yaml](https://github.com/miladansari/Gene-Expression-Analysis/blob/main/assets/multiqc_config.yaml)    |MultiQC configuration file|
 | ./conf | [base.config](https://github.com/miladansari/Gene-Expression-Analysis/blob/main/conf/base.config)     |    Configuration file to execute the pipeline with HPC Slurm:Workload Manager  |
 | ./conf | [fastq_screen.conf](https://github.com/miladansari/Gene-Expression-Analysis/blob/main/conf/fastq_screen.config)| Fastqscreen configuration files and references |
