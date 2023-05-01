@@ -41,21 +41,21 @@ The **input.csv** must be generated, comma separated, in the following way, havi
 
 
 ## Workflow:
-1(1). **parse items emitted by a channel** ([SplitCsv](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/modules/splitCsv.nf)), Default = Run
+1(1). **parse items emitted by a channel** ([SplitCsv](https://github.com/miladansari/Transcriptomic/blob/master/modules/splitCsv.nf)), Default = Run
 
-1(2). **Reads concatenation** ([CONCAT](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/modules/concat_reads.nf)) Default = Run, skipped automatically if not needed
-
-
-2. **FASTQ data pre-processing** ([FASTP](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/modules/fastp.nf)) quality control, trimming of adapters, filtering by quality, and read pruning. Default = Run
+1(2). **Reads concatenation** ([CONCAT](https://github.com/miladansari/Transcriptomic/blob/master/modules/concat_reads.nf)) Default = Run, skipped automatically if not needed
 
 
-3. **Decontamination Using Kmers** ([BBDuk](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/modules/bbduk.nf)) Search for contaminant sequences, part of the BBTools package. Default = Run
+2. **FASTQ data pre-processing** ([FASTP](https://github.com/miladansari/Transcriptomic/blob/master/modules/fastp.nf)) quality control, trimming of adapters, filtering by quality, and read pruning. Default = Run
 
 
-4(1). **Detection of library contamination** ([FASTQSCREEN](https://github.com/miladansari/Denovo-transcriptreconstruction/blob/main/modules/fastqscreen.nf)). Default = Run
+3. **Decontamination Using Kmers** ([BBDuk](https://github.com/miladansari/Transcriptomic/blob/master/modules/bbduk.nf)) Search for contaminant sequences, part of the BBTools package. Default = Run
 
 
-4(2). **MultiQC** ([MULTIQC](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/modules/multiqc.nf)) Default = Run 
+4(1). **Detection of library contamination** ([FASTQSCREEN](https://github.com/miladansari/Transcriptomic/blob/master/modules/fastqscreen.nf)). Default = Run
+
+
+4(2). **MultiQC** ([MULTIQC](https://github.com/miladansari/Transcriptomic/blob/master/modules/multiqc.nf)) Default = Run 
 
 
 5. **STAR indexing** (STAR_INDEX) Default = Skip 
@@ -63,29 +63,29 @@ STAR Index already provided. To create a custom STAR Index:
 provide genome (fasta) and annotation (gtf) in ./main.nf, and --star_idxist false.
 
 
-6. **STAR alignment 1st_pass** ([STAR_1PASS](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/modules/star_1pass.nf)) Default = Run.
+6. **STAR alignment 1st_pass** ([STAR_1PASS](https://github.com/miladansari/Transcriptomic/blob/master/modules/star_1pass.nf)) Default = Run.
 
 Edit star_1pass.nf to define custom parameters.
 
 
-7. **Splice junctions filtering** ([SJ_1FILTER](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/modules/sj_1filter.nf) Default = Run.
+7. **Splice junctions filtering** ([SJ_1FILTER](https://github.com/miladansari/Transcriptomic/blob/master/modules/sj_1filter.nf) Default = Run.
 
 Edit sj_1filter.nf to define custom filtering parameters. 
 
 
-8. **STAR alignment 2st_pass** ([STAR_2PASS](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/modules/star_2pass.nf)) Default = Run.
+8. **STAR alignment 2st_pass** ([STAR_2PASS](https://github.com/miladansari/Transcriptomic/blob/master/modules/star_2pass.nf)) Default = Run.
 
 Edit star_2pass.nf to define custom parameters.
 
 
-9. **SAMTOOLS filterin BAM** ([SAMTOOLS](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/modules/samtools.nf)) Default = Run 
+9. **SAMTOOLS filterin BAM** ([SAMTOOLS](https://github.com/miladansari/Transcriptomic/blob/master/modules/samtools.nf)) Default = Run 
 
 
-10. **STRINGTIE Reference Guided Transcript Assembly** ([STRINGTIE](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/modules/stringTie.nf)) Default = Run 
+10. **STRINGTIE Reference Guided Transcript Assembly** ([STRINGTIE](https://github.com/miladansari/Transcriptomic/blob/master/modules/stringTie.nf)) Default = Run 
 
-11. **STRINGTIE MERGE** ([MERGE_STRINGTIE](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/modules/merge_stringtie.nf)) Default = Run
+11. **STRINGTIE MERGE** ([MERGE_STRINGTIE](https://github.com/miladansari/Transcriptomic/blob/master/modules/merge_stringtie.nf)) Default = Run
 
-12. **MultiQC** ([MULTIQC](https://github.com/miladansari/Denovo-transcript-reconstruction/blob/main/modules/multiqc.nf)) Default = Run 
+12. **MultiQC** ([MULTIQC](https://github.com/miladansari/Transcriptomic/blob/master/modules/multiqc.nf)) Default = Run 
 
 
 ## How to Run the Pipeline:
