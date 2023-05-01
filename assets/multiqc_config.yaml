@@ -1,11 +1,11 @@
-module_order:
+top_modules:
     - fastqc:
-          name: 'FastQC (raw)'
-          info: 'This section of the report shows FastQC results before adapter trimming.'
-          path_filters_exclude:
-              - '*trimmed*.zip'
+        name: 'FastQC (raw)'
+        path_filters_exclude:
+            - '*_trimmed_fastqc.zip'
+    - 'bbtools'
     - fastqc:
-          name: 'FastQC (trimmed)'
-          info: 'This section of the report shows FastQC results after adapter trimming.'
-          path_filters:
-              - '*trimmed*.zip'
+        name: 'FastQC (trimmed)'
+        info: 'FastQC results after adapter trimming.'
+        path_filters:
+            - '*_trimmed_fastqc.zip'
